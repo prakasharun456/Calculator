@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background:rgb(232, 104, 6);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background-color: rgb(87, 84, 77);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(232, 198, 5, 0.5),0 0 15px rgba(243, 155, 3, 0.865);
+}
+.calculator input {
+    border: 0;
+    outline: 0;
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+    margin: 10px;
+    box-shadow: -4px -4px 8px rgba(255, 255, 255, 0.3), 4px 4px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    font-size: 20px;
+    background: transparent;
+    color: white;
+}
+.calculator input:hover {
+    box-shadow: -6px -6px 12px rgba(255, 255, 255, 0.5), 6px 6px 16px rgba(0, 0, 0, 0.4);
+}
+.display{
+    display: flex;
+    justify-content: flex-end;
+    margin:10px;
+    border-bottom: 1px solid white;
+}
+.display input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    height: 80px;
+    padding: 5px;
+    box-shadow: none !important;
+    border-radius: 5px;
+    overflow-x: auto; /* Allows scrolling if content is too long */
+    white-space: nowrap; /* Prevents line breaks */
+    text-overflow: ellipsis; /* Adds ellipsis at the end if content overflows */
+}
+
+input.equal{
+    background-color: #ebe279;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+}
+input.delete{
+color: rgb(255, 77, 0);
+font-weight: bold
+}
+input.clear{
+    color: rgb(233, 133, 10);
+    font-weight: bold;
+}
